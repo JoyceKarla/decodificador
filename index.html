@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-content">
+        <h1 class="apresentacao__titulo">Decodificador de Texto</h1>
+        <h2 class="apresentacao__subtitulo">Apenas letras minúsculas e sem acento!!!</h2>
+        <div class="apresentacao">
+            <div class="apresentacao__conteudo">
+                <textarea id="input-text" placeholder="Digite um texto que você deseja criptografar ou descriptografar"></textarea>
+                <div class="buttons">
+                    <button id="encrypt-btn">Criptografar</button>
+                    <button id="decrypt-btn">Descriptografar</button>
+                    <button id="new-text-btn">Novo Texto</button>
+                </div>
+            </div>
+            <div class="resultado-container">
+                <textarea id="output-text" readonly placeholder="Nenhuma mensagem encontrada"></textarea>
+                <button id="copy-btn">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer class="rodape">
+        Desenvolvido por Joyce Karla
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #180161;
+    --cor-secundaria: #FFDFD6;
+    --cor-terciaria: #EB3678;
+    --cor-hover: #FB773C;
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Ajustado para um padding mais compacto */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Espaçamento interno reduzido */
+}
+
+.apresentacao__titulo {
+    font-size: 2rem; /* Reduzido para um tamanho menor */
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    margin-bottom: 10px; /* Espaçamento abaixo do título reduzido */
+    text-align: center;
+}
+
+.apresentacao__subtitulo {
+    font-size: 1.25rem; /* Ajustado para um tamanho menor */
+    color: var(--cor-secundaria);
+    margin-bottom: 15px; /* Espaçamento abaixo do subtítulo reduzido */
+    text-align: center;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px; /* Espaçamento entre blocos reduzido */
+}
+
+.apresentacao__conteudo {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento interno reduzido */
+}
+
+textarea {
+    width: 100%;
+    height: 120px; /* Ajustada para uma altura menor */
+    padding: 10px; /* Padding interno reduzido */
+    border-radius: 10px;
+    border: 1px solid var(--cor-secundaria);
+    font-size: 1rem;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    resize: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre botões reduzido */
+    margin-top: 10px; /* Espaçamento acima dos botões reduzido */
+}
+
+button {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    border: none;
+    padding: 8px 16px; /* Ajustado para um padding mais compacto */
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+}
+
+#copy-btn {
+    padding: 8px; /* Padding ajustado para um tamanho mais compacto */
+    font-size: 1rem; /* Tamanho da fonte reduzido */
+}
+
+.resultado-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento interno reduzido */
+    margin-top: 20px; /* Espaçamento acima da caixa de resultado reduzido */
+}
+
+.rodape {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    padding: 20px; /* Padding interno reduzido */
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem; /* Tamanho da fonte ajustado */
+    font-weight: 400;
+    border-top: 4px solid var(--cor-terciaria);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao__conteudo, .resultado-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .apresentacao__titulo {
+        font-size: 1.75rem; /* Ajustado para um tamanho menor */
+    }
+
+    .apresentacao__subtitulo {
+        font-size: 1.1rem; /* Ajustado para um tamanho menor */
+    }
+
+    textarea {
+        height: 100px; /* Ajustada para uma altura menor */
+        font-size: 0.9rem; /* Ajustado para um tamanho menor */
+    }
+
+    button {
+        padding: 8px 16px; /* Ajustado para um padding mais compacto */
+        font-size: 0.9rem; /* Ajustado para um tamanho menor */
+    }
+
+    #copy-btn {
+        font-size: 0.9rem; /* Ajustado para um tamanho menor */
+    }
+}
